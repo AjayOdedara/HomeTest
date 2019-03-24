@@ -13,6 +13,10 @@
 		9A2BDE5522484B12008C62A0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2BDE5322484B12008C62A0 /* Launch Screen.storyboard */; };
 		9A2BDE5A22484B2E008C62A0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE5722484B2E008C62A0 /* CoreDataStack.swift */; };
 		9A2BDE5B22484B2E008C62A0 /* MyTakeHomeTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE5822484B2E008C62A0 /* MyTakeHomeTest.xcdatamodeld */; };
+		9A2BDE5E22484DC7008C62A0 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE5D22484DC7008C62A0 /* Bindable.swift */; };
+		9A2BDE6122484DF6008C62A0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE6022484DF6008C62A0 /* HomeViewController.swift */; };
+		9A2BDE6322484E0E008C62A0 /* StoryboardSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE6222484E0D008C62A0 /* StoryboardSupport.swift */; };
+		9A2BDE6522484E17008C62A0 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE6422484E17008C62A0 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9A2BDE5322484B12008C62A0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9A2BDE5722484B2E008C62A0 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		9A2BDE5922484B2E008C62A0 /* MoonRunner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoonRunner.xcdatamodel; sourceTree = "<group>"; };
+		9A2BDE5D22484DC7008C62A0 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		9A2BDE6022484DF6008C62A0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9A2BDE6222484E0D008C62A0 /* StoryboardSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSupport.swift; sourceTree = "<group>"; };
+		9A2BDE6422484E17008C62A0 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,10 @@
 		9A2BDE3822484A03008C62A0 /* MyTakeHomeTest */ = {
 			isa = PBXGroup;
 			children = (
+				9A2BDE5C22484DB6008C62A0 /* Supporting Files */,
 				9A2BDE5622484B2E008C62A0 /* CoreData */,
 				9A2BDE4D22484AF2008C62A0 /* App Delegate */,
+				9A2BDE5F22484DF6008C62A0 /* Home */,
 				9A2BDE5022484B12008C62A0 /* Storyboards */,
 				9A2BDE4022484A05008C62A0 /* Assets.xcassets */,
 				9A2BDE4522484A05008C62A0 /* Info.plist */,
@@ -89,6 +99,24 @@
 				9A2BDE5822484B2E008C62A0 /* MyTakeHomeTest.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9A2BDE5C22484DB6008C62A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A2BDE5D22484DC7008C62A0 /* Bindable.swift */,
+				9A2BDE6222484E0D008C62A0 /* StoryboardSupport.swift */,
+				9A2BDE6422484E17008C62A0 /* LocationManager.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A2BDE5F22484DF6008C62A0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9A2BDE6022484DF6008C62A0 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A2BDE6122484DF6008C62A0 /* HomeViewController.swift in Sources */,
 				9A2BDE5B22484B2E008C62A0 /* MyTakeHomeTest.xcdatamodeld in Sources */,
+				9A2BDE6322484E0E008C62A0 /* StoryboardSupport.swift in Sources */,
+				9A2BDE6522484E17008C62A0 /* LocationManager.swift in Sources */,
 				9A2BDE4F22484AF2008C62A0 /* AppDelegate.swift in Sources */,
+				9A2BDE5E22484DC7008C62A0 /* Bindable.swift in Sources */,
 				9A2BDE5A22484B2E008C62A0 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

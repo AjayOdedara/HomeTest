@@ -30,6 +30,12 @@
 	<array>
 		<string>armv7</string>
 	</array>
+    
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>My Journey App needs access to your location in background tracking in order to record and track your run!</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>My Journey App needs access to your location in order to record and track your run!</string>
+    
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = .black
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
 
-//        let locationManager = LocationManager.shared
-//        locationManager.requestAlwaysAuthorization()
+        let locationManager = LocationManager.shared
+        locationManager.requestAlwaysAuthorization()
         
         return true
     }

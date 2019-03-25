@@ -73,6 +73,7 @@ class NewJourneyViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "Save", style: .default) { _ in
             self.stopRun()
             self.viewModel.saveRun()
+            self.performSegue(withIdentifier: .details, sender: nil)
         })
         alertController.addAction(UIAlertAction(title: "Discard", style: .destructive) { _ in
             self.stopRun()
@@ -148,6 +149,22 @@ class NewJourneyViewController: UIViewController {
         locationManager.startUpdatingLocation()
     }
     
+}
+
+// MARK: - Navigation
+
+extension NewJourneyViewController: SegueHandlerType {
+    enum SegueIdentifier: String {
+        case details = "RunDetailsViewController"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segueIdentifier(for: segue) {
+        case .details:
+            let destination = segue.destination as! RunDetailsViewController
+            destination.run = viewModel.run
+        }
+    }
 }
 
 // MARK: - Location Manager Delegate

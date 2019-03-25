@@ -21,6 +21,9 @@
 		9A2BDE6A22485004008C62A0 /* NewJourneyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE6822485004008C62A0 /* NewJourneyViewModel.swift */; };
 		9A2BDE6C22485053008C62A0 /* FormatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE6B22485053008C62A0 /* FormatDisplay.swift */; };
 		9A2BDE6E22485062008C62A0 /* UnitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE6D22485062008C62A0 /* UnitExtensions.swift */; };
+		9A2BDE7222485442008C62A0 /* RunDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE7022485442008C62A0 /* RunDetailsViewController.swift */; };
+		9A2BDE7322485442008C62A0 /* RunDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE7122485442008C62A0 /* RunDetailViewModel.swift */; };
+		9A2BDE7522485475008C62A0 /* MulticolorPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE7422485475008C62A0 /* MulticolorPolyline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		9A2BDE6822485004008C62A0 /* NewJourneyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewJourneyViewModel.swift; sourceTree = "<group>"; };
 		9A2BDE6B22485053008C62A0 /* FormatDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatDisplay.swift; sourceTree = "<group>"; };
 		9A2BDE6D22485062008C62A0 /* UnitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitExtensions.swift; sourceTree = "<group>"; };
+		9A2BDE7022485442008C62A0 /* RunDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunDetailsViewController.swift; sourceTree = "<group>"; };
+		9A2BDE7122485442008C62A0 /* RunDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunDetailViewModel.swift; sourceTree = "<group>"; };
+		9A2BDE7422485475008C62A0 /* MulticolorPolyline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticolorPolyline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 				9A2BDE4D22484AF2008C62A0 /* App Delegate */,
 				9A2BDE5F22484DF6008C62A0 /* Home */,
 				9A2BDE6622485004008C62A0 /* New Journey  */,
+				9A2BDE6F22485442008C62A0 /* Journey Details */,
 				9A2BDE5022484B12008C62A0 /* Storyboards */,
 				9A2BDE4022484A05008C62A0 /* Assets.xcassets */,
 				9A2BDE4522484A05008C62A0 /* Info.plist */,
@@ -118,6 +125,7 @@
 				9A2BDE6422484E17008C62A0 /* LocationManager.swift */,
 				9A2BDE6B22485053008C62A0 /* FormatDisplay.swift */,
 				9A2BDE6D22485062008C62A0 /* UnitExtensions.swift */,
+				9A2BDE7422485475008C62A0 /* MulticolorPolyline.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -137,6 +145,15 @@
 				9A2BDE6822485004008C62A0 /* NewJourneyViewModel.swift */,
 			);
 			path = "New Journey ";
+			sourceTree = "<group>";
+		};
+		9A2BDE6F22485442008C62A0 /* Journey Details */ = {
+			isa = PBXGroup;
+			children = (
+				9A2BDE7022485442008C62A0 /* RunDetailsViewController.swift */,
+				9A2BDE7122485442008C62A0 /* RunDetailViewModel.swift */,
+			);
+			path = "Journey Details";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,14 +230,17 @@
 				9A2BDE6122484DF6008C62A0 /* HomeViewController.swift in Sources */,
 				9A2BDE5B22484B2E008C62A0 /* MyTakeHomeTest.xcdatamodeld in Sources */,
 				9A2BDE6322484E0E008C62A0 /* StoryboardSupport.swift in Sources */,
+				9A2BDE7222485442008C62A0 /* RunDetailsViewController.swift in Sources */,
 				9A2BDE6C22485053008C62A0 /* FormatDisplay.swift in Sources */,
 				9A2BDE6522484E17008C62A0 /* LocationManager.swift in Sources */,
 				9A2BDE4F22484AF2008C62A0 /* AppDelegate.swift in Sources */,
+				9A2BDE7522485475008C62A0 /* MulticolorPolyline.swift in Sources */,
 				9A2BDE5E22484DC7008C62A0 /* Bindable.swift in Sources */,
 				9A2BDE6922485004008C62A0 /* NewJourneyViewController.swift in Sources */,
 				9A2BDE5A22484B2E008C62A0 /* CoreDataStack.swift in Sources */,
 				9A2BDE6A22485004008C62A0 /* NewJourneyViewModel.swift in Sources */,
 				9A2BDE6E22485062008C62A0 /* UnitExtensions.swift in Sources */,
+				9A2BDE7322485442008C62A0 /* RunDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

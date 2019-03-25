@@ -26,6 +26,8 @@
 	<string>My Journey App needs access to your location in background tracking in order to record and track your run!</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>My Journey App needs access to your location in order to record and track your run!</string>
+    <key>NSMotionUsageDescription</key>
+    <string>App needs to detect user motion in order to get auto tracking to save battery life</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>

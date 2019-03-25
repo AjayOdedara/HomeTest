@@ -11,6 +11,7 @@
 import UIKit
 import CoreLocation
 import MapKit
+import CoreMotion
 
 class NewJourneyViewController: UIViewController {
     
@@ -27,6 +28,7 @@ class NewJourneyViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     
     let viewModel: NewJourneyViewModel = NewJourneyViewModel()
+    let motionActivityManager = CMMotionActivityManager()
     private var locationManager = LocationManager.shared
     
     override func viewDidLoad() {
@@ -41,8 +43,21 @@ class NewJourneyViewController: UIViewController {
         locationManager.stopUpdatingLocation()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        motionActivityManager
+            .startActivityUpdates(to: OperationQueue.main) { (activity) in
+                if let stand = activity?.stationary, stand{
+                    print("\(stand)")
+                    self.trackingSwitch.setOn(false, animated: true)
+                }else{
+                    print(" Not standing")
+                    self.trackingSwitch.setOn(true, animated: true)
+                }
+        }
+    }
     func bindViewModel(){
         self.title = viewModel.title
+        
         trackingSwitch.addTarget(self, action: #selector(switchChanged), for: UIControl.Event.valueChanged)
         dataStackView.isHidden = true
     }
@@ -51,6 +66,7 @@ class NewJourneyViewController: UIViewController {
         
         if tracking.isOn{
             locationManager.startUpdatingLocation()
+            
             locationManager.allowsBackgroundLocationUpdates = true
             locationManager.pausesLocationUpdatesAutomatically = false
         }else{
@@ -87,6 +103,7 @@ class NewJourneyViewController: UIViewController {
         
         locationManager.allowsBackgroundLocationUpdates = true
         locationManager.pausesLocationUpdatesAutomatically = false
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         
         userTrackingStack.isHidden = false
         launchPromptStackView.isHidden = true

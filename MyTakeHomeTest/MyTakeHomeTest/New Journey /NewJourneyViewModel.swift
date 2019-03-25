@@ -24,6 +24,7 @@ final class NewJourneyViewModel{
     var distance = Measurement(value: 0, unit: UnitLength.meters)
     var locationList: [CLLocation] = []
     
+    
    
     func saveRun() {
         

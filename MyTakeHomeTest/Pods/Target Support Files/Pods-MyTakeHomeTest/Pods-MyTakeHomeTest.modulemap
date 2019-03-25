@@ -1,0 +1,6 @@
+framework module Pods_MyTakeHomeTest {
+  umbrella header "Pods-MyTakeHomeTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

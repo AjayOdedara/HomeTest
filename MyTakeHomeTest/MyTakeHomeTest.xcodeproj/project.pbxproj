@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E3EA76E79D97DB0181CF715 /* Pods_MyTakeHomeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF3384419EFBBA2F868E47BB /* Pods_MyTakeHomeTest.framework */; };
 		9A2BDE4122484A05008C62A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2BDE4022484A05008C62A0 /* Assets.xcassets */; };
 		9A2BDE4F22484AF2008C62A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE4E22484AF2008C62A0 /* AppDelegate.swift */; };
 		9A2BDE5422484B12008C62A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2BDE5122484B12008C62A0 /* Main.storyboard */; };
@@ -24,6 +25,9 @@
 		9A2BDE7222485442008C62A0 /* RunDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE7022485442008C62A0 /* RunDetailsViewController.swift */; };
 		9A2BDE7322485442008C62A0 /* RunDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE7122485442008C62A0 /* RunDetailViewModel.swift */; };
 		9A2BDE7522485475008C62A0 /* MulticolorPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE7422485475008C62A0 /* MulticolorPolyline.swift */; };
+		9A2BDE7A2248E662008C62A0 /* PastJourneysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE772248E661008C62A0 /* PastJourneysViewController.swift */; };
+		9A2BDE7B2248E662008C62A0 /* JourneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE782248E661008C62A0 /* JourneyTableViewCell.swift */; };
+		9A2BDE7C2248E662008C62A0 /* PastJourneysModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2BDE792248E661008C62A0 /* PastJourneysModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,12 @@
 		9A2BDE7022485442008C62A0 /* RunDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunDetailsViewController.swift; sourceTree = "<group>"; };
 		9A2BDE7122485442008C62A0 /* RunDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunDetailViewModel.swift; sourceTree = "<group>"; };
 		9A2BDE7422485475008C62A0 /* MulticolorPolyline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticolorPolyline.swift; sourceTree = "<group>"; };
+		9A2BDE772248E661008C62A0 /* PastJourneysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastJourneysViewController.swift; sourceTree = "<group>"; };
+		9A2BDE782248E661008C62A0 /* JourneyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyTableViewCell.swift; sourceTree = "<group>"; };
+		9A2BDE792248E661008C62A0 /* PastJourneysModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastJourneysModel.swift; sourceTree = "<group>"; };
+		9B5E77172274670183FAB1FA /* Pods-MyTakeHomeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTakeHomeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyTakeHomeTest/Pods-MyTakeHomeTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C46C8191EB8D94F5384D5858 /* Pods-MyTakeHomeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTakeHomeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyTakeHomeTest/Pods-MyTakeHomeTest.release.xcconfig"; sourceTree = "<group>"; };
+		FF3384419EFBBA2F868E47BB /* Pods_MyTakeHomeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTakeHomeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3EA76E79D97DB0181CF715 /* Pods_MyTakeHomeTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +75,8 @@
 			children = (
 				9A2BDE3822484A03008C62A0 /* MyTakeHomeTest */,
 				9A2BDE3722484A03008C62A0 /* Products */,
+				9D7582B61DD2C3D14F727B31 /* Pods */,
+				CE15888048180E8EF2546310 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +97,7 @@
 				9A2BDE5F22484DF6008C62A0 /* Home */,
 				9A2BDE6622485004008C62A0 /* New Journey  */,
 				9A2BDE6F22485442008C62A0 /* Journey Details */,
+				9A2BDE762248E661008C62A0 /* Journey List */,
 				9A2BDE5022484B12008C62A0 /* Storyboards */,
 				9A2BDE4022484A05008C62A0 /* Assets.xcassets */,
 				9A2BDE4522484A05008C62A0 /* Info.plist */,
@@ -156,6 +170,33 @@
 			path = "Journey Details";
 			sourceTree = "<group>";
 		};
+		9A2BDE762248E661008C62A0 /* Journey List */ = {
+			isa = PBXGroup;
+			children = (
+				9A2BDE772248E661008C62A0 /* PastJourneysViewController.swift */,
+				9A2BDE782248E661008C62A0 /* JourneyTableViewCell.swift */,
+				9A2BDE792248E661008C62A0 /* PastJourneysModel.swift */,
+			);
+			path = "Journey List";
+			sourceTree = "<group>";
+		};
+		9D7582B61DD2C3D14F727B31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B5E77172274670183FAB1FA /* Pods-MyTakeHomeTest.debug.xcconfig */,
+				C46C8191EB8D94F5384D5858 /* Pods-MyTakeHomeTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE15888048180E8EF2546310 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF3384419EFBBA2F868E47BB /* Pods_MyTakeHomeTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A2BDE4822484A05008C62A0 /* Build configuration list for PBXNativeTarget "MyTakeHomeTest" */;
 			buildPhases = (
+				3EFFF7A7CC6E12869ACA6C0A /* [CP] Check Pods Manifest.lock */,
 				9A2BDE3222484A03008C62A0 /* Sources */,
 				9A2BDE3322484A03008C62A0 /* Frameworks */,
 				9A2BDE3422484A03008C62A0 /* Resources */,
+				EC3314FC26894E8849CE6F54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,6 +231,11 @@
 				TargetAttributes = {
 					9A2BDE3522484A03008C62A0 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -222,6 +270,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3EFFF7A7CC6E12869ACA6C0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyTakeHomeTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC3314FC26894E8849CE6F54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyTakeHomeTest/Pods-MyTakeHomeTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyTakeHomeTest/Pods-MyTakeHomeTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A2BDE3222484A03008C62A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -231,9 +318,11 @@
 				9A2BDE5B22484B2E008C62A0 /* MyTakeHomeTest.xcdatamodeld in Sources */,
 				9A2BDE6322484E0E008C62A0 /* StoryboardSupport.swift in Sources */,
 				9A2BDE7222485442008C62A0 /* RunDetailsViewController.swift in Sources */,
+				9A2BDE7B2248E662008C62A0 /* JourneyTableViewCell.swift in Sources */,
 				9A2BDE6C22485053008C62A0 /* FormatDisplay.swift in Sources */,
 				9A2BDE6522484E17008C62A0 /* LocationManager.swift in Sources */,
 				9A2BDE4F22484AF2008C62A0 /* AppDelegate.swift in Sources */,
+				9A2BDE7A2248E662008C62A0 /* PastJourneysViewController.swift in Sources */,
 				9A2BDE7522485475008C62A0 /* MulticolorPolyline.swift in Sources */,
 				9A2BDE5E22484DC7008C62A0 /* Bindable.swift in Sources */,
 				9A2BDE6922485004008C62A0 /* NewJourneyViewController.swift in Sources */,
@@ -241,6 +330,7 @@
 				9A2BDE6A22485004008C62A0 /* NewJourneyViewModel.swift in Sources */,
 				9A2BDE6E22485062008C62A0 /* UnitExtensions.swift in Sources */,
 				9A2BDE7322485442008C62A0 /* RunDetailViewModel.swift in Sources */,
+				9A2BDE7C2248E662008C62A0 /* PastJourneysModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,15 +466,13 @@
 		};
 		9A2BDE4922484A05008C62A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B5E77172274670183FAB1FA /* Pods-MyTakeHomeTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AJKK7Y7PP4;
 				INFOPLIST_FILE = MyTakeHomeTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aj.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -394,15 +482,13 @@
 		};
 		9A2BDE4A22484A05008C62A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C46C8191EB8D94F5384D5858 /* Pods-MyTakeHomeTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AJKK7Y7PP4;
 				INFOPLIST_FILE = MyTakeHomeTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aj.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

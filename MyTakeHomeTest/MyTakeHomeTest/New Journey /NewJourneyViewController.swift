@@ -35,7 +35,7 @@ class NewJourneyViewController: UIViewController {
         bindViewModel()
         
     }
-    override func viewWillDisappear(_ animated: Bool) {
+    override func viewDidDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         viewModel.timer?.invalidate()
         locationManager.stopUpdatingLocation()

@@ -47,10 +47,10 @@ class NewJourneyViewController: UIViewController {
         motionActivityManager
             .startActivityUpdates(to: OperationQueue.main) { (activity) in
                 if let stand = activity?.stationary, stand{
-                    print("\(stand)")
+                    self.switchOff()
                     self.trackingSwitch.setOn(false, animated: true)
                 }else{
-                    print(" Not standing")
+                    self.switchOn()
                     self.trackingSwitch.setOn(true, animated: true)
                 }
         }
@@ -62,19 +62,21 @@ class NewJourneyViewController: UIViewController {
         dataStackView.isHidden = true
     }
     
-    @objc func switchChanged(tracking: UISwitch) {
-        
-        if tracking.isOn{
-            locationManager.startUpdatingLocation()
-            
-            locationManager.allowsBackgroundLocationUpdates = true
-            locationManager.pausesLocationUpdatesAutomatically = false
-        }else{
-            locationManager.stopUpdatingLocation()
-            locationManager.allowsBackgroundLocationUpdates = false
-            locationManager.pausesLocationUpdatesAutomatically = true
-        }
+    func switchOn(){
+        locationManager.startUpdatingLocation()
+        locationManager.allowsBackgroundLocationUpdates = true
+        locationManager.pausesLocationUpdatesAutomatically = false
     }
+    func switchOff(){
+        locationManager.stopUpdatingLocation()
+        locationManager.allowsBackgroundLocationUpdates = false
+        locationManager.pausesLocationUpdatesAutomatically = true
+    }
+    
+    @objc func switchChanged(tracking: UISwitch) {
+        tracking.isOn ? switchOn() : switchOff()
+    }
+    
     
     @IBAction func startTapped() {
         startRun()
